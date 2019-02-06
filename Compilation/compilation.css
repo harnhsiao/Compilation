@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.layout{
+  /* max-width: 1240px; */
+  width: 100%;
+  margin: 0 auto;
+  /* padding-top: 25px; */
+}
+.logo{
+  margin-left: 1520px;
+  width: 100px;
+}
+#navbar{
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+#navbar a{
+  float: left;
+  display: black;
+  color: black;
+  text-align: center;
+  padding-bottom: 1px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  margin:0 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+#navbar a:hover {
+  border-bottom: 1px solid black;
+}
+.workcontainer{
+  width: 100%;
+  padding-top: 150px;
+}
+
+.workcontainer{
+  /* padding-top: 30px;
+  padding-bottom: 150px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 0;
+}
+.productcard img{
+  width:100%;
+  display: block;
+  margin: 0;
+}
+.productcard{
+  position: relative;
+}
+.productcard img{
+  width:100%;
+  display: block;
+  margin: 0;
+  max-width: 100%;
+}
+.productinformation{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100; width:100%; height:100%;
+  background-color: rgba(0,0,0,0.3);
+  opacity: 0;
+}
+.productinformation:hover{
+  opacity: 1;
+}
+h5{
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  left: 0;
+  top: 40%;
+  width: 100%;
+}
+.aboutcontainer{
+  width:100%;
+}
+.aboutcontainer{
+  padding-top: 100px;
+}
+.contactcontainer{
+  width: 100%;
+}
+.contactcontainer{
+  padding-top: 200px;
+}
+
+.contact{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 5px;
+}
+.about{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.image{
+  margin-left: 200px;
+  margin-right: 50px;
+}
+.text{
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 200px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+.about img{
+  width:690px;
+  height: auto;
+}
+@media screen and (max-width: 375px){
+  .layout{
+    /* max-width: 1240px; */
+    width: 100%;
+    margin: 0 auto;
+    /* padding-top: 25px; */
+  }
+  .logo{
+    margin-left: 280px;
+    width: 50px;
+  }
+  .workcontainer{
+    /* padding-top: 30px;
+    padding-bottom: 150px; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0;
+  }
+  .aboutcontainer{
+    width:100%;
+  }
+  .about{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .image{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .about img{
+    width:280px;
+    height: auto;
+  }
+  .text{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 50px;
+  }
+  .process{
+    margin-left: 10px;
+  }
+  .processimage img{
+    width: 350px;
+    height: auto;
+  }
+}
